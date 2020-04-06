@@ -1,0 +1,25 @@
+{
+  "name": "uber_laptop",
+  "version": "1.0.0",
+  "description": "uber study by laptop",
+  "main": "index.js",
+  "repository": "https://github.com/superstarMann/uber_laptop.git",
+  "author": "LeeSeungHun <58622039+superstarMann@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.11.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.8.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "graphql-yoga": "^1.18.3",
+    "helmet": "^3.22.0",
+    "morgan": "^1.10.0"
+  },
+  "scripts": {
+    "dev": "cd src && nodemon --exec ts-node index.ts -e ts, graphql"
+  }
+}
