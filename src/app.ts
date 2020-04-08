@@ -15,6 +15,7 @@ class App{
         this.app.express.use(helmet());
 
     };
+    
 }
 
 export default new App().app
