@@ -23,6 +23,7 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "dev": "cd src && nodemon --exec ts-node index.ts -e ts, graphql"
+    "dev": "cd src && nodemon --exec ts-node index.ts -e ts, graphql",
+    "types": ""
   }
 }
