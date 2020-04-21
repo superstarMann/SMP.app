@@ -13,7 +13,7 @@ const appOptions : Options = {
 };
 
 
-const handleAppStart = () => console.log(`Listening on port ${PORT}`);
+const handleAppStart = () => console.log(`We are working in ${PORT}!`);
 
 
 app.start(appOptions, handleAppStart);
