@@ -1,14 +1,14 @@
 type User{
   id: Int!
-  password: String!
+  password: String
   firstName: String!
   lastName: String!
-  FullName: String!
-  PhoneNumber: String!
+  FullName: String
+  PhoneNumber: String
   verifiedPhoneNumber: Boolean!
-  Email: String!
+  Email: String
   verifiedEmail: Boolean!
-  age: Int!
+  age: Int
   ProfilePhoto: String!
   isDriving: Boolean!
   isRiding: Boolean!
@@ -18,4 +18,8 @@ type User{
   lastOrientation:Float
   createAt: String!
   updateAt: String!
+}
+
+type Query{
+  user: User
 }

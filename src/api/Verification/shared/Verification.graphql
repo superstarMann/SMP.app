@@ -1,0 +1,6 @@
+type Verification {
+    id: Int!
+    target: String
+    
+
+}
