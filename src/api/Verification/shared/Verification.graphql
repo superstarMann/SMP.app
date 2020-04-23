@@ -1,6 +1,9 @@
 type Verification {
     id: Int!
-    target: String
-    
-
-}
+    target: String!
+    payLoad: String!
+    key: String!
+    used: Boolean!
+    createAt: String!
+    updateAt: String!
+    }
