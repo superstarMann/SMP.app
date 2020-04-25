@@ -1,3 +1,30 @@
+type Place {
+  id: Int!
+  name: String!
+  lat: Float!
+  lng: Float!
+  adress: String!
+  isFav: Boolean!
+  createAt: String!
+  updateAt: String
+}
+
+type Ride {
+  id: Int!
+  status: String!
+  pickUpAdress: String!
+  pickUpLat: Float!
+  pickUpLng: Float!
+  dropOffAdress: String!
+  dropOffLat: Float!
+  dropOffLng: Float!
+  price: Float!
+  distance: String!
+  duration: String!
+  createAt: String!
+  updateAt: String
+}
+
 type User {
   id: Int!
   password: String
