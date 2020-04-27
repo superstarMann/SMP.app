@@ -1,3 +1,20 @@
+type Chat {
+  id: Int!
+  messages: [Message]!
+  participants: [User]!
+  createAt: String!
+  updateAt: String
+}
+
+type Message {
+  int: Int!
+  text: String!
+  chat: Chat!
+  user: User!
+  createAt: String!
+  updateAt: String
+}
+
 type Place {
   id: Int!
   name: String!
@@ -45,6 +62,8 @@ type User {
   lastOrientation: Float
   createAt: String!
   updateAt: String!
+  chat: Chat
+  messages: [Message]
 }
 
 type Query {

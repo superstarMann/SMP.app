@@ -1,6 +1,9 @@
 import bcrypt, { hash } from "bcrypt";
-import { BaseEntity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, Entity, BeforeInsert, BeforeUpdate } from "typeorm";
+import { BaseEntity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, Entity, BeforeInsert, BeforeUpdate, ManyToOne, OneToMany } from "typeorm";
 import {IsEmail} from "class-validator";
+import Chat from "./Chat";
+import { type } from "os";
+import Message from "./Message";
 
 const BCRYPT_ROUNDS = 20;
 
@@ -63,6 +66,12 @@ class User extends BaseEntity {
     @CreateDateColumn() createAt: string;
     @UpdateDateColumn() updateAt: string;
     
+    @ManyToOne(type => Chat, chat => chat.participants)
+    chat: Chat;
+
+    @OneToMany(type => Message, message => message.user)
+    messages: Message[];
+
     public comparepassword(password: string): Promise<boolean> {
          return bcrypt.compare(password, this.password);
     }

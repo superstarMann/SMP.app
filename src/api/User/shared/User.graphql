@@ -18,6 +18,8 @@ type User{
   lastOrientation:Float
   createAt: String!
   updateAt: String!
+  chat: Chat
+  messages: [Message]
 }
 
 type Query{
