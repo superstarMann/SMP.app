@@ -20,6 +20,9 @@ type User{
   updateAt: String!
   chat: Chat
   messages: [Message]
+  verifications: [Verification]
+  ridesAsPassenger: [Ride]
+  ridesAsDriver: [Ride]  
 }
 
 type Query{

@@ -6,4 +6,5 @@ type Verification {
     used: Boolean!
     createAt: String!
     updateAt: String!
+    user: User!
     }
